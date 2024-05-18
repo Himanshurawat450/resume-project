@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;      
+        box-sizing: border-box;
+      }
+      body {
+        background: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .container {
+        position: relative;
+        width: 100%;
+        max-width: 1000vh;
+        min-height: 100vh;
+        background: #fff;
+        margin: 50px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        box-shadow: 0 35px 55px rgba(0, 0, 0, 01);
+      }
+      .container .leftside {
+        position: relative;
+        background: #003147;
+        padding: 40px;
+      }
+      .profileText {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      .profileText .imgbx {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      .profileText .imgbx img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .profileText h2 {
+        color: #fff;
+        font-size: 1.5em;
+        margin-top: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600;
+        line-height: 1.4em;
+      }
+      .profileText h2 span {
+        font-size: 0.8em;
+        font-weight: 300;
+      }
+      .container .rightside {
+        
+        position: relative;
+        background: #fff;
+        font-size: 25px;
+      }
+      .contactinfo {
+        padding-top: 40px;
+      }
+      .title {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+      }
+      .contactinfo ul {
+        position: relative;
+      }
+      .contactinfo ul li {
+        position: relative;
+        list-style: none;
+        margin: 10px 0;
+        cursor: pointer;
+      }
+      .contactinfo ul li span {
+        color: #fff;
+        font-weight: 300;
+      }
+      .contactinfo .eduction li {
+        margin-bottom: 15px;
+      }
+      .contactinfo .eduction h5 {
+        color: #03a9f4;
+        font-weight: 500;
+      }
+      .contactinfo .eduction h4:nth-child(2) {
+        color: #fff;
+        font-weight: 500;
+      }
+      .contactinfo .eduction h4 {
+        color: #fff;
+        font-weight: 500;
+      }
+      .contactinfo .language .percent {
+        position: relative;
+        width: 100%;
+        height: 6px;
+        background: #081921;
+        display: block;
+        margin-top: 5px;
+      }
+      .contactinfo .language .percent {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: #03a9f4;
+      }
+   
+     
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="leftside">
+        <div class="profileText">
+          <div class="imgbx">
+            <img src="" alt="" />
+          </div>
+          <h2>Himanshu Rawat<br /><span> Developer</span></h2>
+        </div>
+        <div class="contactinfo">
+          <h3 class="title">Contact-Info</h3>
+          <ul>
+            <li>
+              <span class="icon"></span>
+              <span class="text">+12 344 444 33</span>
+            </li>
+            <li>
+              <span class="icon"></span>
+              <span class="text">rawathimanshu8700@gmail.com</span>
+            </li>
+            <li>
+              <span class="icon"></span>
+              <span class="text">www.himas.com</span>
+            </li>
+            <li>
+              <span class="icon"></span>
+              <span class="text">www.linkdin.com</span>
+            </li>
+            <li>
+              <span class="icon"></span>
+              <span class="text">Badarpur, New Delhi</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contactinfo education">
+          <h3 class="title">Education</h3>
+          <ul>
+            <li>
+              <h5>2023--2025</h5>
+              <h4>BCA</h4>
+              <h4>University Name</h4>
+            </li>
+            <li>
+              <h5>2023--2024</h5>
+              <h4>Full Stack Web Development</h4>
+              <h4>University Name</h4>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contactinfo language">
+          <h3 class="title">Languages</h3>
+          <ul>
+            <li>
+              <span class="text">English</span>
+              <span class="percent"></span>
+              <div style="width: 80%"></div>
+            </li>
+            <li>
+              <span class="text">Hindi</span>
+              <span class="percent"></span>
+              <div style="width: 90%"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="rightside">
+        <div class="about">
+          <h2 class="title2">Profile</h2>
+          <p>
+            Passionate and detail-oriented web developer with a strong foundation in computer science and hands-on experience in full-stack web development. Currently pursuing a BCA degree, complemented by a specialized course in Full Stack Web Development. Adept at creating responsive and user-friendly websites with a keen interest in the latest web technologies and best practices. A quick learner and effective communicator, looking forward to contributing to innovative projects and gaining practical experience in the tech industry.
+          </p>
+          <br>
+          <h2 class="techskills">Technical Skills</h2>
+          <ul>
+      <li>Languages: HTML, CSS, JavaScript, </li>
+               <li>Frameworks: React</li>
+               <li>Databases: MongoDB, MySQL</li>
+               <li>Tools: Git, Visual Studio Code</li>
+               <li>Other: RESTful APIs, Responsive Design</li>
+          </ul>
+          <h2 class="projects">Projects
+          </h2>
+          <h4>Portfolio Website
+          </h4>
+          <ul>
+            <li>Designed and developed a personal portfolio website to showcase projects and skills.</li>
+            <li>Implemented responsive design principles to ensure compatibility across various devices.</li>
+            <li>Technologies used: HTML, CSS, JavaScript, React.</li>
+            
+          </ul>
+          <h4>E-commerce Website
+          </h4>
+          <ul>
+            <li>Developed a full-stack e-commerce application with user authentication and payment gateway integration.
+            </li>
+            <li>Implemented features such as product search, user reviews, and a shopping cart.</li>
+            <li>Technologies used: Node.js, Express.js, MongoDB, React.</li>
+          </ul>
+          <h2 class="education">Education</h2>
+          <h4>Bachelor of Computer Applications (BCA)</h4>
+          <p>Indira Gandhi National Open University, New Delhi</p>
+          <p>2023 - 2026</p>
+          <h4>Full Stack Web Development Certification</h4>
+          <p>PW SKILLS</p>
+          <p>2023-2024</p>
+          <h2>Languages</h2>
+           <ul>
+            <li>English (Fluent)</li>
+            <li>Hindi (Native)
+            </li>
+           </ul>
+             </div>
+
+      </div>
+    </div>
+  </body>
+</html>
